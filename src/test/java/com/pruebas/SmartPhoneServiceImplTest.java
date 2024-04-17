@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SmartPhoneServiceImplTest {
 
     @Test
+    @DisplayName("Test método count")
     void count() {
         SmartPhoneServiceImpl sp = new SmartPhoneServiceImpl();
         // assertNotNull(sp.count());
@@ -22,6 +23,7 @@ class SmartPhoneServiceImplTest {
 
     }
 
+    @DisplayName("Test método findOne")
     void findOne() {
         SmartPhoneServiceImpl sp = new SmartPhoneServiceImpl();
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
