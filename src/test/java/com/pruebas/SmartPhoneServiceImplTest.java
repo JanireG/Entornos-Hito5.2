@@ -18,6 +18,16 @@ class SmartPhoneServiceImplTest {
         System.out.println("Finalizando test");
     }
 
+    @BeforeAll
+    public static void beforeAllTests() {
+        System.out.println("Iniciando todos los tests");
+    }
+
+    @AfterAll
+    public static void afterAllTests() {
+        System.out.println("Finalizando todos los tests");
+    }
+
     @Test
     @DisplayName("Test método count")
     void count() {
