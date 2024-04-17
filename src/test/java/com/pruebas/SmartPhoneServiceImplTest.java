@@ -8,6 +8,16 @@ import static org.junit.jupiter.api.Assertions.*;
 @DisplayName("Test de clase SmartPhoneServiceImplTest")
 class SmartPhoneServiceImplTest {
 
+    @BeforeEach
+    public void beforeEachTest() {
+        System.out.println("Iniciando test");
+    }
+
+    @AfterEach
+    public void afterEachTest() {
+        System.out.println("Finalizando test");
+    }
+
     @Test
     @DisplayName("Test método count")
     void count() {
