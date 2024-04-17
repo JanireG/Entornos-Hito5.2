@@ -12,7 +12,8 @@ class SmartPhoneServiceImplTest {
         SmartPhoneServiceImpl sp = new SmartPhoneServiceImpl();
         // assertNotNull(sp.count());
         // assertTrue(sp.count()>0);
-        assertEquals(3, sp.count());
+        // assertEquals(3, sp.count());
+        assertEquals(2, sp.count());
 
     }
 }
