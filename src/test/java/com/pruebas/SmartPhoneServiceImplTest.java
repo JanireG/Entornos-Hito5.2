@@ -10,7 +10,9 @@ class SmartPhoneServiceImplTest {
     @Test
     void count() {
         SmartPhoneServiceImpl sp = new SmartPhoneServiceImpl();
-        //assertNotNull(sp.count());
-        assertTrue(sp.count()>0);
+        // assertNotNull(sp.count());
+        // assertTrue(sp.count()>0);
+        assertEquals(3, sp.count());
+
     }
 }
