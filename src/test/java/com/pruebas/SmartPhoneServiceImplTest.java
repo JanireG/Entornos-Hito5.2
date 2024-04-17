@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @DisplayName("Test de clase SmartPhoneServiceImplTest")
 class SmartPhoneServiceImplTest {
 
@@ -29,6 +30,7 @@ class SmartPhoneServiceImplTest {
     }
 
     @Test
+    @Order(2)
     @DisplayName("Test método count")
     void count() {
         SmartPhoneServiceImpl sp = new SmartPhoneServiceImpl();
@@ -43,6 +45,8 @@ class SmartPhoneServiceImplTest {
 
     }
 
+    @Test
+    @Order(1)
     @DisplayName("Test método findOne")
     void findOne() {
         SmartPhoneServiceImpl sp = new SmartPhoneServiceImpl();
