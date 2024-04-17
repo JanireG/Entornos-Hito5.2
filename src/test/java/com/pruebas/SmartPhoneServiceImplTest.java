@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Test de clase SmartPhoneServiceImplTest")
 class SmartPhoneServiceImplTest {
 
     @Test
